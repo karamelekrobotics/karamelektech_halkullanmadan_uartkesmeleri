@@ -1,0 +1,28 @@
+--cpu Cortex-M7.fp.dp
+"deneme\startup_stm32f767xx.o"
+"deneme\main.o"
+"deneme\stm32f7xx_it.o"
+"deneme\stm32f7xx_hal_msp.o"
+"deneme\stm32f7xx_hal_cortex.o"
+"deneme\stm32f7xx_hal_tim.o"
+"deneme\stm32f7xx_hal_tim_ex.o"
+"deneme\stm32f7xx_hal_uart.o"
+"deneme\stm32f7xx_hal_uart_ex.o"
+"deneme\stm32f7xx_hal_rcc.o"
+"deneme\stm32f7xx_hal_rcc_ex.o"
+"deneme\stm32f7xx_hal_flash.o"
+"deneme\stm32f7xx_hal_flash_ex.o"
+"deneme\stm32f7xx_hal_gpio.o"
+"deneme\stm32f7xx_hal_dma.o"
+"deneme\stm32f7xx_hal_dma_ex.o"
+"deneme\stm32f7xx_hal_pwr.o"
+"deneme\stm32f7xx_hal_pwr_ex.o"
+"deneme\stm32f7xx_hal.o"
+"deneme\stm32f7xx_hal_i2c.o"
+"deneme\stm32f7xx_hal_i2c_ex.o"
+"deneme\stm32f7xx_hal_exti.o"
+"deneme\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "deneme\deneme.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "deneme.map" -o deneme\deneme.axf
